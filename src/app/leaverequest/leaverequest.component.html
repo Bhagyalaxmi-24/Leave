@@ -1,0 +1,34 @@
+<div class="form-container">
+    <h2>Detailed Leave Application Form</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="employeeName">Employee Name:</label>
+        <input type="text" id="employeeName" [(ngModel)]="leaveRequest.empName" name="employeeName" required>
+      </div>
+      <div class="form-group">
+        <label for="employeeId">Employee ID:</label>
+        <input type="text" id="employeeId" [(ngModel)]="leaveRequest.empId" name="employeeId" required>
+      </div>
+      <div class="form-group">
+        <label for="department">Department:</label>
+        <input type="text" id="department" [(ngModel)]="leaveRequest.empDepartment" name="department" required>
+      </div>
+      <div class="form-group">
+        <label for="contactInfo">Contact Information:</label>
+        <input type="text" id="contactInfo" [(ngModel)]="leaveRequest.empContactNumber" name="contactInfo" required>
+      </div>
+      <div class="form-group">
+        <label for="leaveDates">Leave Date:</label>
+        <input type="date" id="leaveDates" [(ngModel)]="leaveRequest.leaveDate" name="leaveDates" required>
+      </div>
+      <div class="form-group">
+        <label for="reason">Reason:</label>
+        <textarea id="reason" [(ngModel)]="leaveRequest.reason" name="reason" rows="4" required></textarea>
+      </div>
+      
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  

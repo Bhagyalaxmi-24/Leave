@@ -1,0 +1,7 @@
+body{
+    background-image: url('https://www.cflowapps.com/wp-content/uploads/2018/07/leave-management-process.png');
+    background-size: cover; /* Optional: Adjusts the image to cover the entire element */
+    background-repeat: no-repeat; /* Optional: Prevents the image from repeating */
+    background-position: absolute; /* Optional: Centers the image */
+     flex: 1;
+}
