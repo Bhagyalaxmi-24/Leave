@@ -13,15 +13,16 @@ import { ErrorComponent } from './error/error.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
-  {path:'',component:AboutusComponent},
+  {path:'about',component:AboutusComponent},
   {path:'Contact',component:ContactComponent},
   {path:'login',component:LoginComponent},
   {path:'Profile',component:ProfileComponent},
+  {path:'',redirectTo: '/login',pathMatch: 'full'},
   {path:'request',component:LeaverequestComponent},
   {path:'history',component:LeavehistoryComponent},
   {path:'calender',component:LeavecalenderComponent},
   {path:'company',component:CompanyComponent},
-  {path:'**',component:ErrorComponent}
+  {path:'**',redirectTo: '/login'}
 ];
 
 @NgModule({

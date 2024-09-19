@@ -1,1 +1,8 @@
-<p>profile works!</p>
+<!-- profile.component.html -->
+<div *ngIf="employee">
+    <h1>Welcome, {{ employee.emp_name }}</h1>
+    <p>Email: {{ employee.emp_email }}</p>
+    <p>Department: {{ employee.emp_department }}</p>
+    <p>Salary: {{ employee.emp_salary }}</p>
+  </div>
+  

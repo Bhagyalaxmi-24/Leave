@@ -1,0 +1,44 @@
+<div class="form-container">
+    <h2 >Detailed Leave Application Form</h2>
+    <form>
+        <div class="form-group">
+            <label for="employeeName">Employee Name:</label>
+            <input type="text" id="employeeName" name="employeeName" required>
+        </div>
+        <div class="form-group">
+            <label for="employeeId">Employee ID:</label>
+            <input type="text" id="employeeId" name="employeeId" required>
+        </div>
+        <div class="form-group">
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" required>
+        </div>
+        <div class="form-group">
+            <label for="contactInfo">Contact Information:</label>
+            <input type="text" id="contactInfo" name="contactInfo" required>
+        </div>
+        <div class="form-group">
+            <label for="leaveType">Type of Leave:</label>
+            <select id="leaveType" name="leaveType" required>
+                <option value="sick">Sick Leave</option>
+                <option value="casual">Casual Leave</option>
+                <option value="annual">Annual Leave</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="leaveDates">Leave Dates:</label>
+            <input type="text" id="leaveDates" name="leaveDates" placeholder="e.g., 01/08/2024 - 05/08/2024" required>
+        </div>
+        <div class="form-group">
+            <label for="reason">Reason:</label>
+            <textarea id="reason" name="reason" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="managerApproval">Manager Approval:</label>
+            <input type="text" id="managerApproval" name="managerApproval" placeholder="Approved/Disapproved" required>
+        </div>
+        <div class="form-group">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
